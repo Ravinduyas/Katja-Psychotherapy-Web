@@ -201,8 +201,8 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="order-1 md:order-2 relative self-start">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-soft)]">
+          <div className="order-1 md:order-2 relative md:self-stretch">
+            <div className="md:sticky md:top-24 aspect-[4/3] rounded-2xl overflow-hidden shadow-[var(--shadow-soft)]">
               <img src={lagoonPalms.src} alt="Calm lagoon with palms — symbolizing peace and clarity" className="w-full h-full object-cover" />
             </div>
           </div>
