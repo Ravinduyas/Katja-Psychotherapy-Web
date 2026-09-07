@@ -296,6 +296,17 @@ export default function Home() {
             <p className="font-display text-2xl text-foreground italic">
               "A strong, trusting relationship between therapist and client is at the heart of meaningful change."
             </p>
+            <div className="text-left space-y-6 pt-4">
+              <p>
+                My philosophy is that our childhood and many life experiences since then shape our behavior, thus influencing all of our world. Once we connect our emotions and behavior (what we do knowingly and unknowingly), and our physical reactions we can begin to understand how things around us are influenced, how reactions to those behaviors might be making us feel lost, confused, angry, sad, or otherwise imbalanced.
+              </p>
+              <p>
+                I strive to help remove barriers that prevent people from living as fully and richly as possible, increasing enjoyment of life through improved relationships, better self-care, and more satisfying overall functioning. Working to heal long standing patterns of emotional pain frees one to live more happily right now. A client's motivation to find what is behind difficult feelings or behaviors is monumental for successful therapy, as is each person's dedication to take responsibility for deciding and guiding his/her life. A trusting relationship between therapist and client is at the heart of therapy, and through this relationship, impressive results will happen. The client and therapist each need to feel like the match is a good one, therefore an initial assessment period of a few sessions should be accounted for. I look forward to sharing this process with you.
+              </p>
+              <p>
+                Katja Křížková has a degree in Psychology from George Mason University in Virginia and is a European certified Integrative Psychotherapist. Her additional training includes Crisis intervention, Dream work, and Trauma therapy among others. She is part of a working group for ČAP (Czech Association of Psychotherapy) and a member of the European Association of Integrative Psychotherapists. She has cross cultural experience as a TCK having lived in Africa (5 years), the United States (17 years), Asia (5 years) and Europe (29 years). She has been practicing yoga for the past twenty years. She is fluent in English and Czech, and understands Slovak at an advanced level.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
