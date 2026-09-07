@@ -174,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* 3. ABOUT PSYCHOTHERAPY */}
-      <Section className="bg-[var(--sand)]/40">
+      <Section className="bg-[var(--sand)]/40 pb-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <Eyebrow>Mental Health Therapy</Eyebrow>
@@ -210,7 +210,7 @@ export default function Home() {
       </Section>
 
       {/* 4. SERVICES */}
-      <section id="services" className="relative py-28 px-6 md:px-10 bg-[var(--sand)]/30">
+      <section id="services" className="relative pt-12 pb-28 px-6 md:px-10 bg-[var(--sand)]/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <Eyebrow>Therapy Services</Eyebrow>
