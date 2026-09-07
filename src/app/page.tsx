@@ -55,7 +55,7 @@ function ExpandableList({ items, initial = 2 }: { items: string[]; initial?: num
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
