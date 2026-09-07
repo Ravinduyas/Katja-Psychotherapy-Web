@@ -181,16 +181,16 @@ export default function Home() {
             <h2 className="font-display text-4xl md:text-5xl leading-tight mb-8">
               What is <span className="italic">integrative psychotherapy?</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light text-justify">
               Integrative therapy is a combined approach to psychotherapy that combines various elements of specific therapies. Integrative therapists believe that there is no single approach that can treat each client in all situations.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light text-justify">
               From my viewpoint, Integrative Psychotherapy means taking risks, moving out of your comfort zone, going deep inside yourself as well as far into the larger global community. It is a humanistic and existential approach which addresses both immediate and ultimate concerns of living.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light text-justify">
               Integrative Psychotherapy can help you break outmoded habits that may have interfered with enjoying your life and the world around you. Being mindful, you can learn from the past, uncover cast off parts of yourself and work through difficult challenges, and unproductive patterns of thinking and behavior in present day life. Using a variety of complementary techniques — you can learn to undo long-standing, maladaptive behaviors or negative perceptions that stand in the way of a more rich and meaningful life.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light text-justify">
               Whether it's overcoming depression or overcoming anxiety; coping with adapting; intercultural issues and TCK support; LGBTQ issues; health issues; coping with loss; going to college; or moving beyond a set of traumatic events, I will walk you through the process. Valuing the strength of relationship and the innate capacity of the human organism to heal itself, I will teach you to notice the wisdom of your own body and to allow its full expression.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -296,7 +296,7 @@ export default function Home() {
             <p className="font-display text-2xl text-foreground italic">
               "A strong, trusting relationship between therapist and client is at the heart of meaningful change."
             </p>
-            <div className="text-left space-y-6 pt-4">
+            <div className="text-justify space-y-6 pt-4">
               <p>
                 My philosophy is that our childhood and many life experiences since then shape our behavior, thus influencing all of our world. Once we connect our emotions and behavior (what we do knowingly and unknowingly), and our physical reactions we can begin to understand how things around us are influenced, how reactions to those behaviors might be making us feel lost, confused, angry, sad, or otherwise imbalanced.
               </p>
