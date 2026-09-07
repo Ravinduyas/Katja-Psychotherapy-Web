@@ -8,7 +8,7 @@ import {
   Sparkles, Compass, Shield, Sprout, ArrowRight, Calendar,
   GraduationCap, Briefcase, Award, ChevronDown, ChevronUp
 } from "lucide-react";
-import heroSunset from "@/assets/hero-walk.jpg";
+import heroSunset from "@/assets/hero-main.jpeg";
 import railwaySea from "@/assets/railway-sea.jpeg";
 import lagoonPalms from "@/assets/lagoon-palms.jpeg";
 import treeLand from "@/assets/tree-land.jpeg";

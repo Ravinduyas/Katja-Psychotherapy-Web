@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import heroSunset from "@/assets/hero-walk.jpg";
+import heroSunset from "@/assets/hero-main.jpeg";
 import "./globals.css";
 
 export const metadata: Metadata = {
