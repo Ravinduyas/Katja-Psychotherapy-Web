@@ -549,7 +549,7 @@ export default function Home() {
                 <Calendar className="mr-2 h-4 w-4" /> Book a Session
               </Button>
             </a>
-            <a href="#footer">
+            <a href="https://wa.me/420603892568" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="rounded-full px-8 h-12 bg-white/10 border-white/50 text-white hover:bg-white hover:text-foreground backdrop-blur-sm">
                 Contact Now
               </Button>
