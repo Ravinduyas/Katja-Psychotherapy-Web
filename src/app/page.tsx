@@ -179,13 +179,19 @@ export default function Home() {
           <div className="order-2 md:order-1">
             <Eyebrow>Mental Health Therapy</Eyebrow>
             <h2 className="font-display text-4xl md:text-5xl leading-tight mb-8">
-              What is <span className="italic">Psychotherapy?</span>
+              What is <span className="italic">integrative psychotherapy?</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
-              Psychotherapy is a professional and confidential process that helps you understand your thoughts, emotions, and behaviors.
+              Integrative therapy is a combined approach to psychotherapy that combines various elements of specific therapies. Integrative therapists believe that there is no single approach that can treat each client in all situations.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+              From my viewpoint, Integrative Psychotherapy means taking risks, moving out of your comfort zone, going deep inside yourself as well as far into the larger global community. It is a humanistic and existential approach which addresses both immediate and ultimate concerns of living.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+              Integrative Psychotherapy can help you break outmoded habits that may have interfered with enjoying your life and the world around you. Being mindful, you can learn from the past, uncover cast off parts of yourself and work through difficult challenges, and unproductive patterns of thinking and behavior in present day life. Using a variety of complementary techniques — you can learn to undo long-standing, maladaptive behaviors or negative perceptions that stand in the way of a more rich and meaningful life.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
-              It is not about being told what to do — it is about discovering clarity, building self-awareness, and creating meaningful change in your life.
+              Whether it's overcoming depression or overcoming anxiety; coping with adapting; intercultural issues and TCK support; LGBTQ issues; health issues; coping with loss; going to college; or moving beyond a set of traumatic events, I will walk you through the process. Valuing the strength of relationship and the innate capacity of the human organism to heal itself, I will teach you to notice the wisdom of your own body and to allow its full expression.
             </p>
             <div className="flex flex-wrap gap-2">
               {["Emotional healing", "Anxiety treatment", "Depression support", "Self-awareness", "Integrative approach"].map((tag) => (
@@ -277,25 +283,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. WHAT IS INTEGRATIVE PSYCHOTHERAPY */}
+      {/* 6. PHILOSOPHY */}
       <Section className="bg-gradient-to-b from-[var(--sand)]/30 to-background">
         <div className="max-w-3xl mx-auto text-center">
           <Sparkles className="h-8 w-8 text-primary mx-auto mb-6" />
           <h2 className="font-display text-4xl md:text-5xl leading-tight mb-8">
-            What is <span className="italic">integrative psychotherapy?</span>
+            A safe space <span className="italic">for growth</span>
           </h2>
-          <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed text-left md:text-center">
-            <p>
-              Integrative therapy is a combined approach to psychotherapy that combines various elements of specific therapies. Integrative therapists believe that there is no single approach that can treat each client in all situations.
-            </p>
-            <p>
-              From my viewpoint, Integrative Psychotherapy means taking risks, moving out of your comfort zone, going deep inside yourself as well as far into the larger global community. It is a humanistic and existential approach which addresses both immediate and ultimate concerns of living.
-            </p>
-            <p>
-              Integrative Psychotherapy can help you break outmoded habits that may have interfered with enjoying your life and the world around you. Being mindful, you can learn from the past, uncover cast off parts of yourself and work through difficult challenges, and unproductive patterns of thinking and behavior in present day life. Using a variety of complementary techniques — you can learn to undo long-standing, maladaptive behaviors or negative perceptions that stand in the way of a more rich and meaningful life.
-            </p>
-            <p>
-              Whether it's overcoming depression or overcoming anxiety; coping with adapting; intercultural issues and TCK support; LGBTQ issues; health issues; coping with loss; going to college; or moving beyond a set of traumatic events, I will walk you through the process. Valuing the strength of relationship and the innate capacity of the human organism to heal itself, I will teach you to notice the wisdom of your own body and to allow its full expression.
+          <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
+            <p>Your past experiences, emotions, and behaviors are all connected.</p>
+            <p>Therapy helps you understand these connections — allowing you to move forward with clarity, confidence, and self-trust.</p>
+            <p className="font-display text-2xl text-foreground italic">
+              "A strong, trusting relationship between therapist and client is at the heart of meaningful change."
             </p>
           </div>
         </div>
