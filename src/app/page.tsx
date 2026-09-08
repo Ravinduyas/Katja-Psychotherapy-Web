@@ -226,7 +226,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 icon: Heart,
@@ -239,12 +239,6 @@ export default function Home() {
                 title: "Couple Therapy",
                 body: "I help partners connect their emotions and behaviors to better understand how they influence each other.",
                 note: "Requires commitment from both partners. 48-hour cancellation policy applies to the couple.",
-              },
-              {
-                icon: Sparkles,
-                title: "Integrative Approach",
-                body: "A combined method using elements of different therapies tailored to the specific client.",
-                note: "Focuses on mindfulness, uncovering 'cast off' parts of yourself, and undoing maladaptive behaviors.",
               },
             ].map(({ icon: Icon, title, body, note }) => (
               <Card key={title} className="p-10 border-border/40 bg-card rounded-2xl shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-deep)] transition-shadow">
