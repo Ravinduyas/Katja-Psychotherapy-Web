@@ -30,3 +30,6 @@ next-env.d.ts
 *.sln
 *.sw?
 tsconfig.tsbuildinfo
+
+# private documents - never publish
+public/images/*.pdf

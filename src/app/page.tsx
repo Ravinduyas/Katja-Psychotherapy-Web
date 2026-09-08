@@ -14,6 +14,7 @@ import lagoonPalms from "@/assets/lagoon-palms.jpeg";
 import treeLand from "@/assets/tree-land.jpeg";
 import sunsetBeach from "@/assets/sunset-beach.jpeg";
 import therapist from "@/assets/therapist.jpeg";
+import logoWhite from "@/assets/logo-white.png";
 
 function Section({ id, children, className = "" }: { id?: string; children: React.ReactNode; className?: string }) {
   return (
@@ -59,12 +60,15 @@ export default function Home() {
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
-          <a href="#top" className="flex flex-col leading-tight">
-            <span className="font-display text-2xl md:text-[1.7rem] text-white font-semibold tracking-wide drop-shadow">
-              Katja <span className="italic font-medium">Křížková</span>
-            </span>
-            <span className="text-[0.7rem] md:text-xs uppercase tracking-[0.25em] text-white/85 font-medium mt-0.5 drop-shadow">
-              Integrative Psychotherapy
+          <a href="#top" className="flex items-center gap-3">
+            <img src={logoWhite.src} alt="Katja Křížková logo" className="h-9 w-auto drop-shadow" />
+            <span className="flex flex-col leading-tight">
+              <span className="font-display text-2xl md:text-[1.7rem] text-white font-semibold tracking-wide drop-shadow">
+                Katja <span className="italic font-medium">Křížková</span>
+              </span>
+              <span className="text-[0.7rem] md:text-xs uppercase tracking-[0.25em] text-white/85 font-medium mt-0.5 drop-shadow">
+                Integrative Psychotherapy
+              </span>
             </span>
           </a>
           <div className="hidden md:flex items-center gap-9 text-[0.95rem] text-white/90 drop-shadow">
@@ -576,6 +580,7 @@ export default function Home() {
       <footer id="footer" className="bg-foreground text-background py-16 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
           <div>
+            <img src={logoWhite.src} alt="" className="h-10 w-auto mb-4 opacity-80" />
             <h3 className="font-display text-2xl mb-3">Katja Křížková</h3>
             <p className="text-background/60 text-sm font-light leading-relaxed">
               Integrative Psychotherapy & Mental Health Support. A safe space for healing, growth, and reconnection.
