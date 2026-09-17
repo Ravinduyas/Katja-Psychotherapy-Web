@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import logoWhite from "@/assets/logo-white.png";
 
 const NAV_LINKS = [
-  { href: "/#top", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "/#about", label: "About" },
   { href: "/#services", label: "Services" },
   { href: "/#contact", label: "Booking" },
@@ -11,10 +14,20 @@ const NAV_LINKS = [
 ];
 
 export default function SiteHeader({ active }: { active?: string }) {
+  const pathname = usePathname();
+
+  // Already on the homepage: Next won't re-navigate to "/", so scroll manually.
+  const goHome = (e: React.MouseEvent) => {
+    if (pathname !== "/") return;
+    e.preventDefault();
+    window.history.replaceState(null, "", window.location.pathname);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
-        <Link href="/#top" className="flex items-center gap-3">
+        <Link href="/" onClick={goHome} className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={logoWhite.src} alt="Katja Křížková logo" className="h-9 w-auto drop-shadow" />
           <span className="flex flex-col leading-tight">
@@ -31,6 +44,7 @@ export default function SiteHeader({ active }: { active?: string }) {
             <Link
               key={label}
               href={href}
+              onClick={href === "/" ? goHome : undefined}
               aria-current={active === label ? "page" : undefined}
               className={active === label ? "text-white font-semibold" : "hover:text-white transition"}
             >

@@ -61,7 +61,7 @@ export default function Home() {
       <SiteHeader />
 
       {/* 1. HERO */}
-      <section id="top" className="relative min-h-screen flex items-center my-[15vh] rounded-3xl overflow-hidden mx-4 md:mx-8">
+      <section id="top" className="relative min-h-[75vh] py-16 flex items-center my-[15vh] rounded-3xl overflow-hidden mx-4 md:mx-8">
         <img
           src={heroSunset.src}
           alt="Sunset over the ocean — symbolizing emotional warmth and healing"
@@ -73,7 +73,7 @@ export default function Home() {
             <Eyebrow>
               <span className="text-primary-foreground/90">Integrative Psychotherapy</span>
             </Eyebrow>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.95] mb-8">
               Integrative Psychotherapy <span className="italic">&</span> Mental Health Support
             </h1>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-10 max-w-xl font-light">
@@ -92,9 +92,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 text-xs tracking-[0.3em] uppercase">
-          Scroll
         </div>
       </section>
 
