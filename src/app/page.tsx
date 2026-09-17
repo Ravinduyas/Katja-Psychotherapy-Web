@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -76,7 +77,7 @@ export default function Home() {
             <a href="#about" className="hover:text-white transition">About</a>
             <a href="#services" className="hover:text-white transition">Services</a>
             <a href="#contact" className="hover:text-white transition">Booking</a>
-            <a href="#approach" className="hover:text-white transition">Resources</a>
+            <Link href="/blog" className="hover:text-white transition">Blog</Link>
           </div>
           <a href="#contact">
             <Button className="rounded-full bg-[oklch(0.62_0.09_205)] hover:bg-[oklch(0.55_0.10_210)] text-white font-semibold px-6 shadow-md">
@@ -594,6 +595,7 @@ export default function Home() {
               <li><a href="#services" className="hover:text-background">Services</a></li>
               <li><a href="#approach" className="hover:text-background">Approach</a></li>
               <li><a href="#about" className="hover:text-background">About Katja</a></li>
+              <li><Link href="/blog" className="hover:text-background">Blog</Link></li>
               <li><a href="#contact" className="hover:text-background">Book a session</a></li>
             </ul>
           </div>
