@@ -4,6 +4,13 @@ import matter from "gray-matter";
 import { marked } from "marked";
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+// Plain <img>/<a> tags don't get Next's basePath, which the GitHub Pages
+// deploy needs for site-relative URLs.
+function withBasePath(url: string): string {
+  return url.startsWith("/") && !url.startsWith("//") ? BASE_PATH + url : url;
+}
 
 export interface PostMeta {
   slug: string;
@@ -29,7 +36,7 @@ function readPostFile(fileName: string): { meta: PostMeta; content: string } {
       title: data.title ?? slug,
       date: data.date ? new Date(data.date).toISOString() : new Date().toISOString(),
       excerpt: data.excerpt ?? content.trim().split("\n")[0].slice(0, 180),
-      image: data.image,
+      image: data.image ? withBasePath(data.image) : undefined,
       tags: Array.isArray(data.tags) ? data.tags : [],
     },
     content,
@@ -50,7 +57,9 @@ export function getPost(slug: string): Post | null {
   const filePath = path.join(BLOG_DIR, `${safeSlug}.md`);
   if (!fs.existsSync(filePath)) return null;
   const { meta, content } = readPostFile(`${safeSlug}.md`);
-  const html = marked.parse(content, { async: false });
+  const html = marked
+    .parse(content, { async: false })
+    .replace(/(src|href)="([^"]*)"/g, (_, attr, url) => `${attr}="${withBasePath(url)}"`);
   return { meta, html };
 }
 

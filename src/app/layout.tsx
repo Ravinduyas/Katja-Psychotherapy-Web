@@ -3,8 +3,9 @@ import heroSunset from "@/assets/hero-main.jpeg";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  // Origin only: image URLs passed to metadata already include the basePath.
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+    new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").origin,
   ),
   title: "Psychotherapy Services | Anxiety, Trauma & Relationship Therapy",
   description:
