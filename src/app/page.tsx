@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
-  Heart, Users, UsersRound, Mail, Phone, MapPin,
+  Heart, Users, UsersRound,
   Sparkles, Compass, Shield, Sprout, ArrowRight, Calendar,
   GraduationCap, Briefcase, Award, ChevronDown, ChevronUp
 } from "lucide-react";
@@ -15,7 +14,8 @@ import lagoonPalms from "@/assets/lagoon-palms.jpeg";
 import treeLand from "@/assets/tree-land.jpeg";
 import sunsetBeach from "@/assets/sunset-beach.jpeg";
 import therapist from "@/assets/therapist.jpeg";
-import logoWhite from "@/assets/logo-white.png";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 function Section({ id, children, className = "" }: { id?: string; children: React.ReactNode; className?: string }) {
   return (
@@ -58,34 +58,7 @@ export default function Home() {
   const [showMore, setShowMore] = useState(false);
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
-      {/* NAV */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
-        <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
-          <a href="#top" className="flex items-center gap-3">
-            <img src={logoWhite.src} alt="Katja Křížková logo" className="h-9 w-auto drop-shadow" />
-            <span className="flex flex-col leading-tight">
-              <span className="font-display text-2xl md:text-[1.7rem] text-white font-semibold tracking-wide drop-shadow">
-                Katja <span className="italic font-medium">Křížková</span>
-              </span>
-              <span className="text-[0.7rem] md:text-xs uppercase tracking-[0.25em] text-white/85 font-medium mt-0.5 drop-shadow">
-                Integrative Psychotherapy
-              </span>
-            </span>
-          </a>
-          <div className="hidden md:flex items-center gap-9 text-[0.95rem] text-white/90 drop-shadow">
-            <a href="#top" className="hover:text-white transition">Home</a>
-            <a href="#about" className="hover:text-white transition">About</a>
-            <a href="#services" className="hover:text-white transition">Services</a>
-            <a href="#contact" className="hover:text-white transition">Booking</a>
-            <Link href="/blog" className="hover:text-white transition">Blog</Link>
-          </div>
-          <a href="#contact">
-            <Button className="rounded-full bg-[oklch(0.62_0.09_205)] hover:bg-[oklch(0.55_0.10_210)] text-white font-semibold px-6 shadow-md">
-              Book Session
-            </Button>
-          </a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       {/* 1. HERO */}
       <section id="top" className="relative min-h-screen flex items-center my-[15vh] rounded-3xl overflow-hidden mx-4 md:mx-8">
@@ -571,40 +544,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer id="footer" className="bg-foreground text-background py-16 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-          <div>
-            <img src={logoWhite.src} alt="" className="h-10 w-auto mb-4 opacity-80" />
-            <h3 className="font-display text-2xl mb-3">Katja Křížková</h3>
-            <p className="text-background/60 text-sm font-light leading-relaxed">
-              Integrative Psychotherapy & Mental Health Support. A safe space for healing, growth, and reconnection.
-            </p>
-          </div>
-          <div>
-            <h4 className="text-xs uppercase tracking-[0.3em] mb-4 text-background/50">Contact</h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /><span>katjakrizkova@gmail.com</span></li>
-              <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /><span>+420 603 892 568</span></li>
-              <li className="flex items-center gap-3"><MapPin className="h-4 w-4 text-primary" /><span>Online & in person</span></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-xs uppercase tracking-[0.3em] mb-4 text-background/50">Explore</h4>
-            <ul className="space-y-2 text-sm text-background/70">
-              <li><a href="#services" className="hover:text-background">Services</a></li>
-              <li><a href="#approach" className="hover:text-background">Approach</a></li>
-              <li><a href="#about" className="hover:text-background">About Katja</a></li>
-              <li><Link href="/blog" className="hover:text-background">Blog</Link></li>
-              <li><a href="#contact" className="hover:text-background">Book a session</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-background/10 text-xs text-background/50 flex flex-col sm:flex-row justify-between gap-3">
-          <p>© {new Date().getFullYear()} Katja Křížková. All rights reserved.</p>
-          <p>Crafted with care for your healing journey.</p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
